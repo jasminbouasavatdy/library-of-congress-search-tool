@@ -10,16 +10,28 @@
 </head>
 
 <body>
-    <h1 class="display-3 text-center"> Library of Congress Search Engine</h1>
-    <div class="container-xl">
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="search">Search</span>
+    <div class="container-fluid ">
+        <h1 class="display-3 text-center"> Library of Congress Search Engine</h1>
+        <div class="container-xl">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                </div>
+                <input id="searchBox"class="form-control form-control-lg" type="text" placeholder="Search here!">
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a id="photo" class="dropdown-item" href="#">Photo</a>
+                    <a id="newspaper" class="dropdown-item" href="#">Newspaper</a>
+                    <a id="map" class="dropdown-item" href="#">Map</a>
+                </div>
+            <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+            </div>
         </div>
-        <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
-        
+
     </div>
 </body>
 
