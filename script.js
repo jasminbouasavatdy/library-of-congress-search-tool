@@ -1,4 +1,5 @@
 console.log("here");
+var 
 
 fetch("https://www.loc.gov/maps/?q=civil war&fo=json")
   .then(function (response) {
@@ -22,3 +23,14 @@ fetch("https://www.loc.gov/maps/?q=civil war&fo=json")
       searchBarResultEl.appendChild(divEl);
     }
   });
+var searchInput = document.querySelector("#searchBox")
+function buttonClickHandler(event) {
+  event.preventDefault();
+  var searchData = event.target.getAttribute('')
+
+
+
+}
+
+var searchButtonEl = document.querySelector("#searchBtn");
+searchButtonEl.addEventListener("click", buttonClickHandler);
